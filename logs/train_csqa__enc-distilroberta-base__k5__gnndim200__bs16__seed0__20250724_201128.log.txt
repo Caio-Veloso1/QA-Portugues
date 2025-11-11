@@ -1,0 +1,15 @@
+1ac500a415e2
+pid: 52
+conda env: ambiente
+screen: 
+
+gpu: 0,1
+
+Namespace(att_head_num=2, batch_size=16, cuda=True, dataset='csqa', debug=False, decoder_lr=0.001, dev_adj='data/csqa/graph/dev.graph.adj.pk', dev_statements='data/csqa/statement/dev.statement.jsonl', drop_partial_batch=False, dropoutf=0.2, dropoutg=0.2, dropouti=0.2, encoder='distilroberta-base', encoder_layer=-1, encoder_lr=1e-05, ent_emb=['tzw'], ent_emb_paths=['data/cpnet/tzw.ent.npy'], eval_batch_size=2, fc_dim=200, fc_layer_num=0, fill_partial_batch=False, fp16=True, freeze_ent_emb=True, gnn_dim=200, inhouse=True, inhouse_train_qids='data/csqa/inhouse_split_qids.txt', init_range=0.02, k=5, load_model_path=None, log_interval=10, loss='cross_entropy', lr_schedule='fixed', max_epochs_before_stop=10, max_grad_norm=1.0, max_node_num=200, max_seq_len=100, mini_batch_size=2, mode='train', n_epochs=15, num_relation=38, optim='radam', refreeze_epoch=10000, save_dir='saved_models/csqa/enc-distilroberta-base__k5__gnndim200__bs16__seed0__20250724_201128', save_model=True, seed=0, simple=False, subsample=1.0, test_adj='data/csqa/graph/test.graph.adj.pk', test_statements='data/csqa/statement/test.statement.jsonl', train_adj='data/csqa/graph/train.graph.adj.pk', train_statements='data/csqa/statement/train.statement.jsonl', unfreeze_epoch=4, use_cache=True, warmup_steps=150, weight_decay=0.01)
+| num_concepts: 799273 |
+train_statement_path data/csqa/statement/train.statement.jsonl
+num_choice 5
+| ori_adj_len: mu 121.54 sigma 94.04 | adj_len: 107.96 | prune_rate： 0.17 | qc_num: 7.43 | ac_num: 2.07 |
+| ori_adj_len: mu 118.44 sigma 90.55 | adj_len: 106.55 | prune_rate： 0.15 | qc_num: 7.20 | ac_num: 2.05 |
+| ori_adj_len: mu 119.20 sigma 93.49 | adj_len: 106.22 | prune_rate： 0.16 | qc_num: 7.38 | ac_num: 2.05 |
+args.num_relation 38
